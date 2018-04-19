@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="GdxTheme" parent="android:Theme">
+		<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <color name="col_tools">#FFFFFF</color>
+    <color name="col_imgeuropa">#6EADB7</color>
+    <color name="col_black">#000000</color>
+	<color name="col_dialog">#b7b7b7</color>
+
+        <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+          <item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/progressbarbackground</item>
+          <item name="android:minHeight">5dip</item>
+          <item name="android:maxHeight">10dip</item>
+        </style>       
+	
+</resources>

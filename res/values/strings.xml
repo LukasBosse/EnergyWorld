@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EnergyWorld</string>
+    <string name="app_version">1.0.0</string>
+    <string name="str_notready">Dieses Gebiet ist noch nicht freigeschaltet.</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/windkraftsymbol</item>
+        <item>@drawable/solarkraftsymbol</item>
+    </string-array>
+    
+</resources>
