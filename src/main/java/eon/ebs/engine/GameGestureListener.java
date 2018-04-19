@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 public class GameGestureListener implements GestureListener {
 
 	private OrthographicCamera cam;
-    private float initialScale = 2f;
+    private float initialScale = 10f;
     private static final float PAN_RATE = (float) 0.01;
     private static final float ZOOM_SPEED = (float) 0.009;
 	

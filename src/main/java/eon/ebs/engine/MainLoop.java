@@ -58,18 +58,17 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		am.load("Kartenmaterial/Karten/Testmap.tmx", TiledMap.class);
 		while(!am.update()) {
 			ui.updateLoader((int) (am.getProgress() * 100));
-			System.out.println("Loaded: " + (am.getProgress() * 100) + "%");
 		}
 		am.finishLoading();
-
 		tiledMap = am.get("Kartenmaterial/Karten/Testmap.tmx");
 		tiledMapRenderer = new IsometricTiledMapRenderer(tiledMap);
 
 		layer = (TiledMapTileLayer) tiledMap.getLayers().get(0);
 		camera = new OrthographicCamera();
-		camera.setToOrtho(false,w, h);
-        camera.position.set(layer.getWidth()/2,layer.getHeight()/2,0);
-        camera.update();
+		camera.setToOrtho(false,w,h);
+		Vector3 center = new Vector3(layer.getWidth() * layer.getTileWidth() / 2, 0, 0);
+        camera.position.set(center);
+		camera.update();
 
 		GestureDetector gd = new GestureDetector(new GameGestureListener(camera));
 		InputMultiplexer im = new InputMultiplexer(gd, this);
@@ -77,13 +76,6 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 
 	}
 
-	public int getProgress() {
-		if(!am.update()) {
-			return (int) (am.getProgress() * 100);
-		}
-		return 0;
-	}
-	
 	@Override
 	public void render() {
 	  	Gdx.gl.glClearColor(0, 0, 0, 1);
@@ -98,7 +90,7 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		if(lastPoint != new Vector3(-1,-1,-1) && mouseMode == 1 && selectedItem != 0) {
 			int x = (int) lastPoint.x;
 			int y = (int) lastPoint.y;
-			/**if(gridLayer.getCell(x, y) != null) {
+			/**´if(gridLayer.getCell(x, y) != null) {
 				Tile newTile;
 				if(selectedItem == 1) {
 					newTile = new PowerPlant(x,y);
@@ -154,6 +146,7 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 	@Override
 	public void dispose() {
 		super.dispose();
+		tiledMapRenderer.dispose();
 	}
 	
 	@Override

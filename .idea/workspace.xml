@@ -2,14 +2,35 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <target>android-22</target>
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e9ecc8d-1a58-4bd0-9886-39c7a013b46f" name="Default" comment="" />
+    <list default="true" id="2e9ecc8d-1a58-4bd0-9886-39c7a013b46f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/loadingscreen.jpg" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/loader.xml" afterPath="$PROJECT_DIR$/res/layout/loader.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/userinterface.xml" afterPath="$PROJECT_DIR$/res/layout/userinterface.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EnergyWorld.apk" afterPath="$PROJECT_DIR$/target/classes/EnergyWorld.apk" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EnergyWorld.unaligned.apk" afterPath="$PROJECT_DIR$/target/classes/EnergyWorld.unaligned.apk" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/GameGestureListener.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/GameGestureListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/MainLoop.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/MainLoop.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/loader.xml" afterPath="$PROJECT_DIR$/target/classes/layout/loader.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/userinterface.xml" afterPath="$PROJECT_DIR$/target/classes/layout/userinterface.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +41,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf>
+      <file leaf-file-name="MainLoop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1557#1563#0" expanded="true" />
+                <element signature="e#3746#3747#0" expanded="true" />
+                <element signature="e#3779#3780#0" expanded="true" />
+                <element signature="e#3822#3823#0" expanded="true" />
+                <element signature="e#3854#3855#0" expanded="true" />
+                <element signature="e#4444#4445#0" expanded="true" />
+                <element signature="e#4478#4479#0" expanded="true" />
+                <element signature="e#4515#4516#0" expanded="true" />
+                <element signature="e#4536#4537#0" expanded="true" />
+                <element signature="e#4572#4573#0" expanded="true" />
+                <element signature="e#4592#4593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameGestureListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>com.mygdx.game</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -43,9 +101,11 @@
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/Europa.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/CompanyIntro.java" />
-        <option value="$PROJECT_DIR$/res/layout/userinterface.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java" />
+        <option value="$PROJECT_DIR$/res/layout/userinterface.xml" />
+        <option value="$PROJECT_DIR$/res/layout/loader.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" />
       </list>
     </option>
   </component>
@@ -98,25 +158,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
               <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
@@ -157,8 +205,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,14 +221,15 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld\res\drawable-hdpi" />
+      <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld" />
+      <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld\src\main\libs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld\src\main" />
       <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld\lib\arm" />
       <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld" />
-      <recent name="C:\Users\L15905\eclipse-workspace\EnergyWorld\src\main\libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,6 +400,7 @@
       <workItem from="1524082406168" duration="3651000" />
       <workItem from="1524141919033" duration="2981000" />
       <workItem from="1524146432274" duration="12625000" />
+      <workItem from="1524174395474" duration="7705000" />
     </task>
     <servers />
   </component>
@@ -359,7 +410,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26096000" />
+    <option name="totallyTimeSpent" value="33801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,12 +423,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1862" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5048544" sideWeight="0.5111982" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13717805" sideWeight="0.49425286" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27012128" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -387,16 +439,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13717805" sideWeight="0.50574714" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08953614" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40418503" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.48880178" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -425,15 +477,15 @@
         <state relative-caret-position="1066">
           <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3824#3825#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3292#3293#0" expanded="false" />
+            <element signature="e#3527#3528#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3600#3601#0" expanded="false" />
+            <element signature="e#3628#3629#0" expanded="false" />
+            <element signature="e#3799#3800#0" expanded="false" />
+            <element signature="e#3824#3825#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -445,18 +497,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1557#1563#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4472#4473#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4586#4587#0" expanded="true" />
-            <element signature="e#4623#4624#0" expanded="true" />
-            <element signature="e#4644#4645#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#4700#4701#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#3779#3780#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3854#3855#0" expanded="true" />
+            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4592#4593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,15 +524,15 @@
         <state relative-caret-position="416">
           <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3824#3825#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3292#3293#0" expanded="false" />
+            <element signature="e#3527#3528#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3600#3601#0" expanded="false" />
+            <element signature="e#3628#3629#0" expanded="false" />
+            <element signature="e#3799#3800#0" expanded="false" />
+            <element signature="e#3824#3825#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,18 +544,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1557#1563#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4472#4473#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4586#4587#0" expanded="true" />
-            <element signature="e#4623#4624#0" expanded="true" />
-            <element signature="e#4644#4645#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#4700#4701#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#3779#3780#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3854#3855#0" expanded="true" />
+            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4592#4593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,15 +571,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3824#3825#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3292#3293#0" expanded="false" />
+            <element signature="e#3527#3528#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3600#3601#0" expanded="false" />
+            <element signature="e#3628#3629#0" expanded="false" />
+            <element signature="e#3799#3800#0" expanded="false" />
+            <element signature="e#3824#3825#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,14 +642,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/budget_dialog.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -655,18 +703,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/CompanyIntro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="375">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="115" column="4" lean-forward="true" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3292#3293#0" expanded="false" />
+            <element signature="e#3527#3528#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3600#3601#0" expanded="false" />
+            <element signature="e#3628#3629#0" expanded="false" />
+            <element signature="e#3799#3800#0" expanded="false" />
+            <element signature="e#3824#3825#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/userinterface.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="4602">
+          <caret line="177" column="8" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -679,82 +764,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/CompanyIntro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/userinterface.xml">
-      <provider editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/loadingscreen.jpg">
+      <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="177" column="24" lean-forward="false" selection-start-line="177" selection-start-column="17" selection-end-line="177" selection-end-column="24" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/loader.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="115" column="4" lean-forward="true" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3824#3825#0" expanded="true" />
-          </folding>
-        </state>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+        <state relative-caret-position="411">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1557#1563#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4472#4473#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4586#4587#0" expanded="true" />
-            <element signature="e#4623#4624#0" expanded="true" />
-            <element signature="e#4644#4645#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#4700#4701#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#3779#3780#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3854#3855#0" expanded="true" />
+            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4592#4593#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
