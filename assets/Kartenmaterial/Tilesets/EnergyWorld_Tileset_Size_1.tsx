@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="EnergyWorld_Tileset_Size_1" tilewidth="525" tileheight="299" tilecount="20" columns="0">
+<tileset name="EnergyWorld_Tileset_Size_1" tilewidth="525" tileheight="299" tilecount="23" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="525" height="297" source="../Assets/EON_EnergyCity_Bodentexturen_Wiese.png"/>
@@ -60,5 +60,14 @@
  </tile>
  <tile id="19">
   <image width="524" height="298" source="../Assets/EON_EnergyCity_Bodentexturen_Strasse - Kurve 4.png"/>
+ </tile>
+ <tile id="20">
+  <image width="525" height="297" source="../Assets/Gridlayer.png"/>
+ </tile>
+ <tile id="21">
+  <image width="525" height="297" source="../Assets/AvailableGridlayer.png"/>
+ </tile>
+ <tile id="22">
+  <image width="525" height="297" source="../Assets/EmptyLayer.png"/>
  </tile>
 </tileset>

@@ -1,7 +1,5 @@
 package eon.ebs.engine;
 
-import android.view.View;
-import android.widget.LinearLayout;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
@@ -16,10 +14,8 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.IsometricTiledMapRenderer;
 import com.badlogic.gdx.math.Vector3;
-import com.eon.energyworld.R;
-import eon.ebs.entities.CoalPlant;
-import eon.ebs.entities.PowerPlant;
-import eon.ebs.entities.Tile;
+import eon.ebs.entities.dao.*;
+import eon.ebs.entities.dto.Tile;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -35,15 +31,17 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 	private OrthographicCamera camera;
 	private int mouseMode = 0;
 	//Map
+	private final String MAPPATH = "Kartenmaterial/Karten/Testmap.tmx";
 	private TiledMap tiledMap;
-	private TiledMapTileLayer layer;
-	//private TiledMapTileLayer gridLayer;
-	private float tilePixelWidth; // = 100px
-	private float tilePixelHeight; // = 50px
+	private TiledMapTileLayer groundLayer;
+	private TiledMapTileLayer gridLayer;
+	private TiledMapTileLayer primaerLayer;
+	private float tilePixelWidth;
+	private float tilePixelHeight;
 	//Picking
 	private Vector3 lastPoint = new Vector3(-1,-1,-1);
 	private int selectedItem = 0;
-	private List<Tile> tileList = new LinkedList<Tile>();
+	private List<Tile> tileList = new LinkedList<>();
 	
 	public MainLoop(AndroidLauncher ui) { this.ui = ui; }
 
@@ -55,18 +53,23 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 
 		am = new AssetManager();
 		am.setLoader(TiledMap.class, new TmxMapLoader(new InternalFileHandleResolver()));
-		am.load("Kartenmaterial/Karten/Testmap.tmx", TiledMap.class);
+		am.load(MAPPATH, TiledMap.class);
 		while(!am.update()) {
 			ui.updateLoader((int) (am.getProgress() * 100));
 		}
 		am.finishLoading();
-		tiledMap = am.get("Kartenmaterial/Karten/Testmap.tmx");
+		tiledMap = am.get(MAPPATH);
 		tiledMapRenderer = new IsometricTiledMapRenderer(tiledMap);
 
-		layer = (TiledMapTileLayer) tiledMap.getLayers().get(0);
+		groundLayer = (TiledMapTileLayer) tiledMap.getLayers().get(0);
+		primaerLayer = (TiledMapTileLayer) tiledMap.getLayers().get(1);
+		gridLayer = (TiledMapTileLayer) tiledMap.getLayers().get(3);
+		tilePixelWidth = groundLayer.getTileWidth();
+		tilePixelHeight = groundLayer.getTileHeight();
+		Vector3 center = new Vector3(groundLayer.getWidth() * groundLayer.getTileWidth() / 2, 0, 0);
+
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false,w,h);
-		Vector3 center = new Vector3(layer.getWidth() * layer.getTileWidth() / 2, 0, 0);
         camera.position.set(center);
 		camera.update();
 
@@ -90,22 +93,42 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		if(lastPoint != new Vector3(-1,-1,-1) && mouseMode == 1 && selectedItem != 0) {
 			int x = (int) lastPoint.x;
 			int y = (int) lastPoint.y;
-			/**´if(gridLayer.getCell(x, y) != null) {
-				Tile newTile;
-				if(selectedItem == 1) {
-					newTile = new PowerPlant(x,y);
-				} else {
-					newTile = new CoalPlant(x,y);
-				}
+			if(gridLayer.getCell(x, y) != null) {
+				Tile newTile = getPlant(selectedItem, x, y);
 				if(!checkIntersection(newTile,x,y)) {
-					gridLayer.getCell(x, y).setTile(tiledMap.getTileSets().getTile(85));
+					primaerLayer.getCell(x, y).setTile(tiledMap.getTileSets().getTileSet(2).getTile(5));
 					tileList.add(newTile);
-					System.out.println("ITEM CHANGED=" + selectedItem);
 				}
 				selectedItem = 0;
 				pushSelectedItem();
-			}**/
+			}
 		}
+	}
+
+	private Tile getPlant(int selectedItem, int x, int y) {
+		int width = (int) tilePixelWidth;
+		int height = (int) tilePixelHeight;
+		switch (selectedItem) {
+			case 1: {
+				return new OffshoreBig(x, y,width,height);
+			}
+			case 2: {
+				return new OffshoreSmall(x,y,width,height);
+			}
+			case 3: {
+				return new OnshoreBig(x,y,width,height);
+			}
+			case 4: {
+				return new OnshoreSmall(x,y,width,height);
+			}
+			case 5: {
+				return new Photovoltaic(x,y,width,height);
+			}
+			default: {
+				break;
+			}
+		}
+		return null;
 	}
 	
 	private boolean checkIntersection(Tile newTile, int x, int y) {
@@ -126,13 +149,13 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 	}
 	
 	protected void setGrid() {
-		/**if(gridLayer.isVisible()) {
+		if(gridLayer.isVisible()) {
 			gridLayer.setVisible(false);
 			mouseMode = 0;
 		} else {
 			gridLayer.setVisible(true);
 			mouseMode = 1;
-		}**/
+		}
 	}
 	
 	private Vector3 worldToIso(Vector3 point, int tileWidth, int tileHeight) {

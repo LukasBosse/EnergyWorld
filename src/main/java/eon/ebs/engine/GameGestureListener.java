@@ -9,10 +9,9 @@ public class GameGestureListener implements GestureListener {
 
 	private OrthographicCamera cam;
     private float initialScale = 10f;
-    private static final float PAN_RATE = (float) 0.01;
-    private static final float ZOOM_SPEED = (float) 0.009;
+    private final int ZOOM_LIMIT = 18;
 	
-    public GameGestureListener(OrthographicCamera cam) {
+    protected GameGestureListener(OrthographicCamera cam) {
     	this.cam = cam;
     	this.cam.zoom = initialScale;
     }
@@ -46,15 +45,12 @@ public class GameGestureListener implements GestureListener {
 	}
 		
 	@Override
-	public boolean panStop(float x, float y, int pointer, int button) {
-			
-		return false;
-	}
+	public boolean panStop(float x, float y, int pointer, int button) { return false; }
 		
    	@Override
    	public boolean zoom (float originalDistance, float currentDistance){
    	   float ratio = originalDistance / currentDistance;
-       cam.zoom = initialScale * ratio;
+   	   if(((int) initialScale * ratio) < ZOOM_LIMIT) { cam.zoom = initialScale * ratio; }
 	   return false;
    	}
 
