@@ -1,5 +1,7 @@
 package eon.ebs.entities.dto;
 
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Rectangle;
 
 public class Tile {
@@ -17,7 +19,15 @@ public class Tile {
 		this.height = height;
 		this.bounding = new Rectangle(x,y,width,height);
 	}
-	
+
+	public void resetGridAt(TiledMapTileLayer gridLayer, TiledMapTile tile, int minX, int maxX, int minY, int maxY) {
+		for(int i = y + minX; i < y + maxX ; i++) {
+			for (int j = x - minY; j < x + maxY; j++) {
+				gridLayer.getCell(j,i).setTile(tile);
+			}
+		}
+	}
+
 	public Rectangle getBounding() {
 		return bounding;
 	}

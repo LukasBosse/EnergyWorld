@@ -6,8 +6,12 @@
     <string name="str_notready">Dieses Gebiet ist noch nicht freigeschaltet.</string>
 
     <string-array name="image_ids">
-        <item>@drawable/windkraftsymbol</item>
-        <item>@drawable/solarkraftsymbol</item>
+        <item>@drawable/hud_bauoption_kernkraftwerk_disabled</item>
+        <item>@drawable/hud_bauoption_photovoltaik</item>
+        <item>@drawable/hud_bauoption_windpark_gross_offshore</item>
+        <item>@drawable/hud_bauoption_windpark_klein_offshore</item>
+        <item>@drawable/hud_bauoption_windpark_gross_onshore</item>
+        <item>@drawable/hud_bauoption_windpark_klein_onshore</item>
     </string-array>
     
 </resources>

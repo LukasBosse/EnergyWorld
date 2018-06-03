@@ -9,14 +9,23 @@ import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.input.GestureDetector;
+import com.badlogic.gdx.maps.MapLayer;
+import com.badlogic.gdx.maps.MapObject;
+import com.badlogic.gdx.maps.MapObjects;
+import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.IsometricTiledMapRenderer;
 import com.badlogic.gdx.math.Vector3;
-import eon.ebs.entities.dao.*;
+import com.badlogic.gdx.utils.ObjectMap;
+import eon.ebs.entities.dao.Cities.*;
+import eon.ebs.entities.dao.Plants.*;
+import eon.ebs.entities.dao.Player.Player;
 import eon.ebs.entities.dto.Tile;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -32,18 +41,33 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 	private int mouseMode = 0;
 	//Map
 	private final String MAPPATH = "Kartenmaterial/Karten/Testmap.tmx";
+	private final String PRIMARY_ELEMENTS_DETECTION = "Primaryelements_Detection";
+	private final String PRIMARY_ELEMENTS = "Primaryelements";
+	private final String GROUND_LAYER = "Bodentexturen";
+	private final String GRID_LAYER = "AvailableGrid";
+	private float tilePixelWidth;
+	private float tilePixelHeight;
+
 	private TiledMap tiledMap;
 	private TiledMapTileLayer groundLayer;
 	private TiledMapTileLayer gridLayer;
+	private MapLayer primaerLayer_Detection;
 	private TiledMapTileLayer primaerLayer;
-	private float tilePixelWidth;
-	private float tilePixelHeight;
+	private ObjectMap<TiledMapTile, Boolean> objectMap;
+	private MapObjects mObjects = new MapObjects();
+	private MapObject mObj;
+	//Player
+	private Player player;
+	//Cities
+	private List<City> cityList = new LinkedList<>();
+	//Plants
+	private List<Plant> plantList = new LinkedList<>();
 	//Picking
 	private Vector3 lastPoint = new Vector3(-1,-1,-1);
 	private int selectedItem = 0;
 	private List<Tile> tileList = new LinkedList<>();
 	
-	public MainLoop(AndroidLauncher ui) { this.ui = ui; }
+	public MainLoop(AndroidLauncher ui, Player player) { this.ui = ui; this.player = player; }
 
 	@Override
 	public void create() {
@@ -51,22 +75,23 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		float w = Gdx.graphics.getWidth();
         float h = Gdx.graphics.getHeight();
 
-		am = new AssetManager();
-		am.setLoader(TiledMap.class, new TmxMapLoader(new InternalFileHandleResolver()));
-		am.load(MAPPATH, TiledMap.class);
-		while(!am.update()) {
-			ui.updateLoader((int) (am.getProgress() * 100));
-		}
-		am.finishLoading();
+        loadMap();
+
 		tiledMap = am.get(MAPPATH);
 		tiledMapRenderer = new IsometricTiledMapRenderer(tiledMap);
 
-		groundLayer = (TiledMapTileLayer) tiledMap.getLayers().get(0);
-		primaerLayer = (TiledMapTileLayer) tiledMap.getLayers().get(1);
-		gridLayer = (TiledMapTileLayer) tiledMap.getLayers().get(3);
+		objectMap = new ObjectMap<>();
+
+		groundLayer = (TiledMapTileLayer) tiledMap.getLayers().get(GROUND_LAYER);
+		primaerLayer = (TiledMapTileLayer) tiledMap.getLayers().get(PRIMARY_ELEMENTS);
+		primaerLayer_Detection =  tiledMap.getLayers().get(PRIMARY_ELEMENTS_DETECTION);
+		gridLayer = (TiledMapTileLayer) tiledMap.getLayers().get(GRID_LAYER);
+		mObjects = primaerLayer_Detection.getObjects();
 		tilePixelWidth = groundLayer.getTileWidth();
 		tilePixelHeight = groundLayer.getTileHeight();
 		Vector3 center = new Vector3(groundLayer.getWidth() * groundLayer.getTileWidth() / 2, 0, 0);
+
+		cityDetection();
 
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false,w,h);
@@ -88,24 +113,72 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
         tiledMapRenderer.setView(camera);
         tiledMapRenderer.render();
 	}
-	
+
+	private City generateCity(String cityName, int x, int y, int width, int height) {
+		Tile tile = new Tile(x,y,width, height);
+		switch (cityName) {
+			case "Bremen": {
+				return new Bremen(tile, null);
+			}
+			case "Hamburg": {
+				return new Hamburg(tile, null);
+			}
+			case "Hannover": {
+				return new Hannover(tile, null);
+			}
+			case "Rostock": {
+				return new Rostock(tile, null);
+			}
+			default: {
+				return null;
+			}
+		}
+	}
+
+	private void loadMap() {
+		am = new AssetManager();
+		am.setLoader(TiledMap.class, new TmxMapLoader(new InternalFileHandleResolver()));
+		am.load(MAPPATH, TiledMap.class);
+		while(!am.update()) {
+			ui.updateLoader((int) (am.getProgress() * 100));
+		}
+		am.finishLoading();
+	}
+
+	private void cityDetection() {
+		for(Iterator<MapObject> mObjs = mObjects.iterator(); mObjs.hasNext();) {
+			mObj = mObjs.next();
+			RectangleMapObject object = (RectangleMapObject) mObj;
+			cityList.add(generateCity(mObj.getName(), (int) object.getRectangle().getX(), (int) object.getRectangle().getY(), (int) object.getRectangle().getWidth(), (int) object.getRectangle().getHeight()));
+		}
+	}
+
 	private void checkTouch() {
 		if(lastPoint != new Vector3(-1,-1,-1) && mouseMode == 1 && selectedItem != 0) {
 			int x = (int) lastPoint.x;
 			int y = (int) lastPoint.y;
 			if(gridLayer.getCell(x, y) != null) {
-				Tile newTile = getPlant(selectedItem, x, y);
-				if(!checkIntersection(newTile,x,y)) {
-					primaerLayer.getCell(x, y).setTile(tiledMap.getTileSets().getTileSet(2).getTile(5));
-					tileList.add(newTile);
+				Plant newTile = getPlant(selectedItem, x, y);
+				if(!checkIntersection(newTile)) {
+					TiledMapTileLayer.Cell cell;
+					if((cell = primaerLayer.getCell(x, y)) != null){
+						cell.setTile(tiledMap.getTileSets().getTile(newTile.getTileID_Construction()));
+						newTile.resetGridAt(gridLayer, tiledMap.getTileSets().getTile(21), newTile.getMinX(), newTile.getMaxX(), newTile.getMinY(),
+								newTile.getMaxY());
+						tileList.add(newTile);
+					} else {
+						System.err.println("ERROR: Primary cell not found!");
+					}
 				}
 				selectedItem = 0;
 				pushSelectedItem();
+			} else {
+				System.err.println("ERROR: Grid cell not found!");
 			}
 		}
 	}
 
-	private Tile getPlant(int selectedItem, int x, int y) {
+	private Plant getPlant(int selectedItem, int x, int y) {
 		int width = (int) tilePixelWidth;
 		int height = (int) tilePixelHeight;
 		switch (selectedItem) {
@@ -131,7 +204,7 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		return null;
 	}
 	
-	private boolean checkIntersection(Tile newTile, int x, int y) {
+	private boolean checkIntersection(Tile newTile) {
 		for(Tile tile : tileList) {
 			if(tile.getBounding().contains(newTile.getBounding())) {
 				return true;
@@ -139,15 +212,23 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 		}
 		return false;
 	}
-	
-	private void pushSelectedItem() {
-		this.ui.setSelectedItem(0);
+
+	private int calcOutcome() {
+		int outcome = 0;
+		for(Plant p : plantList) {
+			outcome += p.calcCosts();
+		}
+		return outcome;
 	}
-	
-	protected void setSelectedItem(int i) {
-		this.selectedItem = i + 1;
+
+	private int calcIncome() {
+		int income = 0;
+		for(City c : cityList) {
+			income += c.calcIncome();
+		}
+		return income;
 	}
-	
+
 	protected void setGrid() {
 		if(gridLayer.isVisible()) {
 			gridLayer.setVisible(false);
@@ -157,6 +238,10 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 			mouseMode = 1;
 		}
 	}
+
+	private void pushSelectedItem() { this.ui.setSelectedItem(0); }
+	
+	protected void setSelectedItem(int i) { this.selectedItem = i + 1; }
 	
 	private Vector3 worldToIso(Vector3 point, int tileWidth, int tileHeight) {
 	    camera.unproject(point);
@@ -209,7 +294,6 @@ public class MainLoop extends ApplicationAdapter implements InputProcessor {
 	public boolean touchDown(int x, int y, int pointer, int button) {
 		lastPoint = worldToIso(new Vector3(x,y,0),(int)tilePixelWidth,(int)tilePixelHeight);
 		if(lastPoint.x >= 0 && lastPoint.y >= 0) checkTouch();
-		System.out.println("TOUCHED: X=" +  (int) lastPoint.x + " Y=" + (int) lastPoint.y + " Z=" + (int) lastPoint.z);
 		return false;
 	}
 

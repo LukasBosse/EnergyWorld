@@ -12,26 +12,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e9ecc8d-1a58-4bd0-9886-39c7a013b46f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreBig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreSmall.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreBig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreSmall.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Photovoltaic.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/PowerPlant.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Plant.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/layout/ui.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Hamburg.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/Connection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Market/Market.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/Kartenmaterial/Assets/EON_EnergyCity_Bodentexturen_Wiese.png" afterPath="$PROJECT_DIR$/assets/Kartenmaterial/Assets/EON_EnergyCity_Bodentexturen_Wiese.png" />
+      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/assets/Kartenmaterial/Karten/Testmap.tmx" afterPath="$PROJECT_DIR$/assets/Kartenmaterial/Karten/Testmap.tmx" />
-      <change beforePath="$PROJECT_DIR$/assets/Kartenmaterial/Tilesets/EnergyWorld_Tileset_Size_1.tsx" afterPath="$PROJECT_DIR$/assets/Kartenmaterial/Tilesets/EnergyWorld_Tileset_Size_1.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" />
+      <change beforePath="$PROJECT_DIR$/assets/Kartenmaterial/Tilesets/Testtileset.tsx" afterPath="$PROJECT_DIR$/assets/Kartenmaterial/Tilesets/Testtileset.tsx" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/bridgeEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/bridgeNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/crossroad.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/dirt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/dirtHigh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/grass.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillCornerEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillCornerNW.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillCornerSE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillCornerWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillRoadEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillRoadNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillRoadSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillRoadWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/hillWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lot.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotCornerEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotCornerNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotCornerSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotCornerWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotExitEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotExitNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotExitSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotExitWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotPark.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/lotWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadCornerES.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadCornerNE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadCornerNW.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadCornerWS.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadEndEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadEndNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadEndSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadEndWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadTEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadTNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadTSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/roadTWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeConiferShort.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeConiferTall.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeShort.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeShort_autumn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeTall.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/treeTall_autumn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/water.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachCornerEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachCornerNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachCornerSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachCornerWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterBeachWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterCornerEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterCornerNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterCornerSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterCornerWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterEast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterNorth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterSouth.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/png/waterWest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/preview.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/readme.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/roadTiles.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/roadTiles.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/roadTiles/roadTiles.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/res/anim/zoomin.xml" afterPath="$PROJECT_DIR$/res/anim/zoomin.xml" />
+      <change beforePath="$PROJECT_DIR$/res/anim/zoomout.xml" afterPath="$PROJECT_DIR$/res/anim/zoomout.xml" />
+      <change beforePath="$PROJECT_DIR$/res/drawable-hdpi/open_background.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/open_background.png" />
+      <change beforePath="$PROJECT_DIR$/res/layout/europa.xml" afterPath="$PROJECT_DIR$/res/layout/europa.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/grid.xml" afterPath="$PROJECT_DIR$/res/layout/grid.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/loader.xml" afterPath="$PROJECT_DIR$/res/layout/loader.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/messagebox.xml" afterPath="$PROJECT_DIR$/res/layout/messagebox.xml" />
+      <change beforePath="$PROJECT_DIR$/res/layout/userinterface.xml" afterPath="$PROJECT_DIR$/res/layout/userinterface.xml" />
+      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/CoalPlant.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/PowerPlant.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Tile.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OffshoreBig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OffshoreSmall.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OnshoreBig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OnshoreSmall.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/Photovoltaic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/PowerPlant.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/EnergyWorld.apk" afterPath="$PROJECT_DIR$/target/classes/EnergyWorld.apk" />
       <change beforePath="$PROJECT_DIR$/target/classes/EnergyWorld.unaligned.apk" afterPath="$PROJECT_DIR$/target/classes/EnergyWorld.unaligned.apk" />
-      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/GameGestureListener.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/GameGestureListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anim/zoomin.xml" afterPath="$PROJECT_DIR$/target/classes/anim/zoomin.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anim/zoomout.xml" afterPath="$PROJECT_DIR$/target/classes/anim/zoomout.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/eon/energyworld/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drawable-hdpi/open_background.png" afterPath="$PROJECT_DIR$/target/classes/drawable-hdpi/open_background.png" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/dialogs/MessageBox.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/dialogs/MessageBox.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher$1.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher$2.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher$2.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/AndroidLauncher.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/Loader.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/Loader.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/engine/MainLoop.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/engine/MainLoop.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/OffshoreBig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/OffshoreSmall.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/OnshoreBig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/OnshoreSmall.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/Photovoltaic.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dao/PowerPlant.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dto/Tile.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/entities/dto/Tile.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/layouts/GridViewAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/layouts/GridViewAdapter$ViewHolder.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/eon/ebs/layouts/GridViewAdapter.class" afterPath="$PROJECT_DIR$/target/classes/eon/ebs/layouts/GridViewAdapter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/europa.xml" afterPath="$PROJECT_DIR$/target/classes/layout/europa.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/grid.xml" afterPath="$PROJECT_DIR$/target/classes/layout/grid.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/loader.xml" afterPath="$PROJECT_DIR$/target/classes/layout/loader.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/messagebox.xml" afterPath="$PROJECT_DIR$/target/classes/layout/messagebox.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/userinterface.xml" afterPath="$PROJECT_DIR$/target/classes/layout/userinterface.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/values/strings.xml" afterPath="$PROJECT_DIR$/target/classes/values/strings.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,81 +156,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainLoop.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
+      <file leaf-file-name="ui.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/ui.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4294#4295#0" expanded="true" />
-                <element signature="e#4327#4328#0" expanded="true" />
-                <element signature="e#4370#4371#0" expanded="true" />
-                <element signature="e#4402#4403#0" expanded="true" />
-                <element signature="e#4986#4987#0" expanded="true" />
-                <element signature="e#5020#5021#0" expanded="true" />
-                <element signature="e#5057#5058#0" expanded="true" />
-                <element signature="e#5078#5079#0" expanded="true" />
-                <element signature="e#5114#5115#0" expanded="true" />
-                <element signature="e#5134#5135#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="208">
+              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PowerPlant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/PowerPlant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java">
+      <file leaf-file-name="AndroidLauncher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Plant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameGestureListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="47" column="86" lean-forward="false" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
+              <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -131,6 +186,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -138,6 +194,11 @@
     <findStrings>
       <find>com.mygdx.game</find>
       <find>layer</find>
+      <find>tileList</find>
+      <find>TILELIST</find>
+      <find>MessageBox</find>
+      <find>pushModus</find>
+      <find>setGrid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,32 +212,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/dialogs/MessageBox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/Loader.java" />
-        <option value="$PROJECT_DIR$/gen/com/eon/energyworld/R.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/Europa.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/CompanyIntro.java" />
-        <option value="$PROJECT_DIR$/res/layout/userinterface.xml" />
-        <option value="$PROJECT_DIR$/res/layout/loader.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/DTOPlant.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Plant.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Building.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/PowerPlant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/CoalPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/PowerPlant.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Photovoltaic.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreSmall.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreBig.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreSmall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreBig.java" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreBig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/PowerPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/Plants/PowerPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Plants/PowerPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/PowerPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Warning.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Story.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Tutorial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/CityConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Bremen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Hamburg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Hannover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Rostock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/MarketConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Market/Market.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Player/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/City.java" />
+        <option value="$PROJECT_DIR$/res/layout/messagebox.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/Plant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OffshoreSmall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/Photovoltaic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OnshoreSmall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/PowerPlant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OffshoreBig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OnshoreBig.java" />
+        <option value="$PROJECT_DIR$/res/layout/loader.xml" />
+        <option value="$PROJECT_DIR$/res/layout/userinterface.xml" />
+        <option value="$PROJECT_DIR$/res/anim/zoomin.xml" />
+        <option value="$PROJECT_DIR$/res/anim/zoomout.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/grid.xml" />
+        <option value="$PROJECT_DIR$/res/layout/europa.xml" />
         <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java" />
+        <option value="$PROJECT_DIR$/res/layout/ui.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java" />
       </list>
     </option>
   </component>
@@ -210,9 +296,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1032" />
+    <option name="width" value="922" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -229,13 +314,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
               <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
@@ -272,53 +367,26 @@
               <item name="ebs" type="462c0819:PsiDirectoryNode" />
               <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ebs" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ebs" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EnergyWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EnergyWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ebs" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20049505" />
     <property name="device.picker.selection" value="ffdad317" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -506,7 +574,21 @@
       <workItem from="1524174395474" duration="7705000" />
       <workItem from="1524182732791" duration="488000" />
       <workItem from="1524432049351" duration="7377000" />
-      <workItem from="1524471416982" duration="6917000" />
+      <workItem from="1524471416982" duration="15742000" />
+      <workItem from="1524580337263" duration="2287000" />
+      <workItem from="1524583344048" duration="9797000" />
+      <workItem from="1524749335456" duration="7373000" />
+      <workItem from="1526459859749" duration="18647000" />
+      <workItem from="1527585893929" duration="2004000" />
+      <workItem from="1527588087135" duration="9481000" />
+      <workItem from="1527604458230" duration="5488000" />
+      <workItem from="1527629308944" duration="2712000" />
+      <workItem from="1527669582879" duration="6241000" />
+      <workItem from="1527690003377" duration="1832000" />
+      <workItem from="1527849586906" duration="1633000" />
+      <workItem from="1527853308468" duration="774000" />
+      <workItem from="1528032293286" duration="19361000" />
+      <workItem from="1528053203356" duration="1005000" />
     </task>
     <servers />
   </component>
@@ -516,7 +598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48583000" />
+    <option name="totallyTimeSpent" value="146043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,16 +626,17 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13717805" sideWeight="0.50574714" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40418503" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40352812" sideWeight="0.48880178" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.48880178" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263506" sideWeight="0.48880178" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19204926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -561,7 +644,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -572,7 +654,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5048544" sideWeight="0.5111982" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13717805" sideWeight="0.49425286" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.48880178" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.48880178" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -582,18 +664,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13717805" sideWeight="0.50574714" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40418503" sideWeight="0.48880178" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40352812" sideWeight="0.48880178" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.48880178" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19204926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -607,314 +689,270 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="47" column="86" lean-forward="false" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OffshoreBig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OffshoreSmall.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OnshoreBig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/OnshoreSmall.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/Photovoltaic.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Plants/PowerPlant.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Plant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/Loader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Warning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/eon/energyworld/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/sounds/SoundStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Story.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/budget_dialog.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Events/Tutorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Rostock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Hannover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#248#249#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Bremen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/CityConnection.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/Hamburg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/messagebox.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3666">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/Photovoltaic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/Europa.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OnshoreSmall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="109" column="4" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+        <state relative-caret-position="156">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/PowerPlant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="100" lean-forward="true" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OffshoreSmall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OnshoreBig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/OffshoreBig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Plants/Plant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Cities/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1400#1401#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        <state relative-caret-position="338">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/dialogs/MessageBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="598">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx-backend-android/1.4.1/gdx-backend-android-1.4.1.jar!/com/badlogic/gdx/backends/android/AndroidInput.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Market/Market.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="166" column="7" lean-forward="false" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
+        <state relative-caret-position="572">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/CompanyIntro.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Connection/MarketConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        <state relative-caret-position="234">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/HUD/HUD_Header_v1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/HUD_Baumenue_Buttons_Hintergrund_v2.png" />
+    <entry file="file://$PROJECT_DIR$/res/anim/fadein.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/anim/zoomout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/anim/zoomin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/userinterface.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="4602">
-          <caret line="177" column="8" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="8" />
+        <state relative-caret-position="3185">
+          <caret line="167" column="16" lean-forward="false" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/loadingscreen.jpg">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/res/layout/grid_single.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
@@ -922,235 +960,106 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/layouts/GridViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="24" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="10" />
+        <state relative-caret-position="520">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/GameGestureListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/layouts/ImageItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="47" column="86" lean-forward="false" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
+        <state relative-caret-position="32">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/europa.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/circular_progress_bar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/buttonshape.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="e#3259#3260#0" expanded="false" />
-            <element signature="e#3292#3293#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Plant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="130">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/Building.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/Europa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="268">
+          <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Photovoltaic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/Player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#508#509#0" expanded="false" />
-            <element signature="e#540#541#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#801#802#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreSmall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#508#509#0" expanded="false" />
-            <element signature="e#540#541#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#801#802#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OnshoreBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#471#472#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#628#629#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#715#716#0" expanded="false" />
-            <element signature="e#738#739#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-            <element signature="e#828#829#0" expanded="false" />
-            <element signature="e#852#853#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#630#631#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#740#741#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#799#800#0" expanded="false" />
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#854#855#0" expanded="false" />
-            <element signature="e#886#887#0" expanded="false" />
-            <element signature="e#911#912#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/OffshoreSmall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#425#426#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <element signature="e#515#516#0" expanded="false" />
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#782#783#0" expanded="false" />
-            <element signature="e#806#807#0" expanded="false" />
-            <element signature="e#838#839#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dto/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="130">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/entities/dao/PowerPlant.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/grid.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/MainLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4294#4295#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5020#5021#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3510">
+          <caret line="75" column="43" lean-forward="false" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eon/ebs/engine/AndroidLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +1120,6 @@
             <option name="proportions">
               <list>
                 <option value="0.20049505" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1231,7 +1139,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.badlogicgames.gdx:gdx-backend-android:1.4.1</last-edited>
+          <last-edited>Maven: com.badlogicgames.gdx:gdx-backend-android:1.9.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

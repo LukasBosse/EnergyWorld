@@ -36,6 +36,7 @@
         <activity android:name="eon.ebs.dialogs.MessageBox"
                   android:label="@string/app_name"
                   android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Dialog"
                   android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
         </activity>
     </application>

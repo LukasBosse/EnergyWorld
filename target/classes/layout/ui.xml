@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <GridLayout
+            android:id="@+id/gameBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:listSelector="#00000000"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+    </GridLayout>
+    <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp" android:background="@drawable/hud_baumenu_footer_v1"
+            android:id="@+id/UI_Footer"
+            android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_alignParentTop="true"
+                android:id="@+id/Footer_Item1">
+
+            <ImageView
+                    android:src="@drawable/hud_baumenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/imageView"
+                    android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Footer_Item2"
+                android:layout_toLeftOf="@+id/Footer_Item3"
+                android:layout_alignTop="@+id/Footer_Item1" android:visibility="visible" android:layout_toRightOf="@+id/Footer_Item1"
+                android:layout_toEndOf="@+id/Footer_Item1">
+
+            <ImageView
+                    android:src="@drawable/hud_baumenu_optionen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/imageView"
+                    android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Footer_Item3" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+            <ImageView
+                    android:src="@drawable/hud_baumenu_verlassen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/imageView"
+                    android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/hudheader_v1" android:id="@+id/UI_Header"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+
+        <ProgressBar
+                android:layout_width="105dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:id="@+id/progressBar2"
+                android:layout_marginTop="15dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="123dp"
+            android:layout_height="333dp"
+            android:layout_below="@+id/UI_Header"
+            android:layout_above="@+id/UI_Footer" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:id="@+id/Baumenu_Layout" android:visibility="invisible">
+        <ImageButton
+                android:src="@drawable/hud_baumenu_pfeil_oben"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/btn_ScrollUp" android:layout_below="@+id/UI_Header" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:adjustViewBounds="true" android:layout_weight="1"/>
+        <GridView
+                android:id="@+id/Baumenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/toolbox_bg"
+                android:horizontalSpacing="@dimen/activity_horizontal_margin"
+                android:numColumns="1"
+                android:layout_below="@+id/btn_ScrollUp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_above="@+id/btn_ScrollDown" android:layout_alignLeft="@+id/btn_ScrollDown"
+                android:layout_alignStart="@+id/btn_ScrollDown" android:layout_weight="1">
+
+        </GridView>
+        <ImageButton
+                android:src="@drawable/hud_baumenu_pfeil_unten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/btn_ScrollDown"
+                android:adjustViewBounds="true" android:layout_above="@+id/UI_Footer" android:layout_alignLeft="@+id/btn_ScrollUp"
+                android:layout_alignStart="@+id/btn_ScrollUp" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView
+            android:src="@drawable/hud_spielgeschwindigkeit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginLeft="43dp" android:layout_marginStart="43dp" android:layout_marginTop="2dp"/>
+    <TextView
+            android:text="20.000.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_Budget"
+            android:layout_alignTop="@+id/imageView3" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:src="@drawable/hud_header_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignTop="@+id/txt_Budget"
+            android:layout_toStartOf="@+id/txt_Budget" android:id="@+id/imageView4" android:layout_alignBottom="@+id/txt_Budget"
+            android:layout_toLeftOf="@+id/txt_Budget"/>
+    <ImageView
+            android:src="@drawable/hud_header_deutschland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/txt_Budget" android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4" android:id="@+id/imageView5" android:adjustViewBounds="true"
+            android:baselineAlignBottom="true" android:scaleType="centerInside"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <ImageView
+                android:src="@drawable/hud_spieler"
+                android:layout_width="200dp"
+                android:layout_height="100dp" android:id="@+id/imageView2" android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="75dp"
+                android:layout_height="10dp"
+                android:id="@+id/progressBar3"
+                android:layout_centerInParent="false"
+                android:layout_marginRight="28dp" android:layout_marginEnd="28dp"
+                android:layout_alignTop="@+id/imageView2" android:layout_alignRight="@+id/imageView2" android:layout_alignEnd="@+id/imageView2"
+                android:layout_marginTop="43dp"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/loadingOverlay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:baselineAligned="false"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+    >
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loader"
+                 android:id="@+id/loadingScreenLayout"
+                 android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
